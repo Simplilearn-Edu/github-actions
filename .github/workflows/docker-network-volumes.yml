@@ -8,7 +8,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+        
+      - name: List files in Dockerfile directory
+        run: ls -l /var/lib/docker/tmp/buildkit-mount4138261429/
+        
       - name: Build Docker image
         run: docker build -t my-app .
 
