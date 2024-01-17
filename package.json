@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --coverage",
-    "lint": "eslint ."
+    "test": "npm run lint && npm run test",
+    "lint": "eslint .",
+    "test": "jest --coverage"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/GitHub-DevOps-Trainer/github-actions.git"
   },
